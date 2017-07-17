@@ -1,0 +1,1959 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>FreeCodeCamp Digest</title>
+    <meta name="description" content="FreeCodeCamp Digest">
+    <meta name="Evaristo" content="SitePoint">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+    <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
+    <link rel="stylesheet" href="css/styles2.css">
+</head>
+
+<body class="news index">
+
+    <header>
+        <!--            <div class="navbar easybar">
+                <div class="menulinks" style="cursor:pointer" onclick="window.location.href='/'">
+                    <a href="/"></a>
+                </div>
+                <div class="menulink"><a href="*" class="archives">ARCHIVES</a>
+                    <span class="divisor">|</span>
+                    <a href="*" class="search">SEARCH</a></div>
+            </div>
+
+-->
+        <div class="container">
+
+            <nav class="navbar navbar-inverse easybar">
+                <!--http://stackoverflow.com/questions/18529274/change-navbar-color-in-twitter-bootstrap-3-->
+                <div class="container-fluid">
+
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html">FCC Digest</a>
+                    </div>
+
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Latest Issues</a></li>
+                        <li><a href="table.html">Top Rankings</a></li>
+                        <li><a href="reference.html">Archives</a></li>
+                    </ul>
+
+
+                    <form class="navbar-form navbar-left easybar">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit">
+<i class="glyphicon glyphicon-search"></i>
+</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main class="rankingpage">
+        <div class="container">
+            <div class="jumbotron jbtrchart">
+                <img src='img/multiBarChart.png' class='chart'>
+                <p>This chart would show trends of the top links. The data injected in chart should CHANGE according to HOW THE VISITOR FILTER the table below!</p>
+                <p></p>
+            </div>
+            <!--<p>This is some text.</p>
+            <p>This is another text.</p>-->
+        </div>
+    </main>
+
+    <section>
+        <div class=container>
+            <h2>The list below shows RATED URLS (DOMAINS) MENTIONED IN FCC; rating is based on social and time based metrics</h2>
+            <h2>The urls and traing REFLECTS HOW PEOPLE OF AN SPECIFIC PROGRAMMING LEVEL commented them in Social Media</h2>
+            <h2>Reaching this list means that the user was interest in URLS and RANKINGS for that programming level</h2>
+            <h2>The user can filter the list using keywords</h2>
+            <h2>Pressing the link of a domain on the list will take you to a REFERENCE PAGE describing THAT domain</h2>
+            <input type="text" id="myInput" onkeyup="newFunction()" placeholder="Search for keywords...">
+            <table id="myTable">
+                <tr class="header">
+                    <th style="width:20%;">DOMAIN</th>
+                    <th style="width:70%;">KEYWORDS (keywords below just for sketching only!)</th>
+                    <th style="width:10%;">USAGE SCORE</th>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.w3schools.com</a></td>
+                    <td>pages, development, web, examples, training, learning, xml, lessons, programming, sql, tutorials, demos, bootstrap, quiz, language, css, source, dom, building, online, php, colors, html, jquery, w3c, tips, javascript, reference, code</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>stackoverflow.com</a></td>
+                    <td>stack, top, tags, complete, questions, knowledge, us, popular, community, help, online, programmers, largest, advance, browse, share, looking, learn, list</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>getbootstrap.com</a></td>
+                    <td>everywhere, development, web, powerful, end, bootstrap, framework, world, popular, developing, faster, css, first, html, everyone, front, easier, js, mobile, responsive, projects, designed</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>developer.mozilla.org</a></td>
+                    <td>including, provides, sign, web, open, like, os, knowledge, technologies, sites, mozilla, also, css, products, information, firefox, network, html, apis, html5, newsletter, documents, apps, developer</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>css-tricks.com</a></td>
+                    <td>cascading, site, style, like, techniques, sites, css, around, things, using, got, big, past, months, sheets, tips, podcasts, tricks, latest</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>maxcdn.bootstrapcdn.com</a></td>
+                    <td></td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>v4-alpha.getbootstrap.com</a></td>
+                    <td>easy, get, web, bootstrap, popular, framework, world, css, building, first, html, started, js, mobile, responsive, projects</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>en.wikipedia.org</a></td>
+                    <td>though, world, supported, today, main, george, full, couple, general, several, article, wikipedia, months, following, free, featured, page, effective, support</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>quotesondesign.com</a></td>
+                    <td>design, everywhere, good, quotes</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>cdnjs.cloudflare.com</a></td>
+                    <td>follow, angular, best, speed, get, web, open, foss, websites, end, com, plugin, png, css, cdnjs, github, library, cdn, dave, twitter, libraries, free, ng, jquery, front, peter, news, hello, js, source, related, latest</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>api.jquery.com</a></td>
+                    <td>handling, event, document, easy, documentation, like, makes, learning, across, api, ajax, new, things, library, check, use, small, html, jquery, center, works, much, animation, browsers, javascript, fast</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>jsfiddle.net</a></td>
+                    <td>scss, create, testing, editor, ide, online, code, html, new, javascript, css, coffeescript</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>api.openweathermap.org</a></td>
+                    <td>data, access, documentation, forecasts, openstreetmap, openweather, api, world, forecast, day, openweathermap, free, simple, current, weather, fast</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>jsbin.com</a></td>
+                    <td>including, features, bin, range, pro, javascript, css, coffeescript, scss, debugging, loves, dave, html, live, js</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>api.forismatic.com</a></td>
+                    <td>forbidden</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>amitp88.github.io</a></td>
+                    <td>cameron, fill, developer, portfolio</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>dev.twitter.com</a></td>
+                    <td>welcome, documentation, developers, tech, check, platform, twitter, full, looking, build, learn, docs, list</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>fontawesome.io</a></td>
+                    <td>css, thanks, iconic, framework, awesome, font</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.sitepoint.com</a></td>
+                    <td>css3, development, web, everything, git, terms, submitting, tutorials, form, css, books, courses, privacy, need, php, learn, ruby, html, agree, know, policy, free, design, html5, control, version, app, mobile, javascript, responsive,
+                        service
+                    </td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.mediawiki.org</a></td>
+                    <td>including, several, open, home, foundation, projects, menu, non, profit, many, also, website, navigation, written, wikipedia, used, php, software, use, free, package, source, wiki</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>api.darksky.net</a></td>
+                    <td></td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>medium.com</a></td>
+                    <td>welcome, matter, day, read, every, stories, share, thousands, place, write, important</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.w3.org</a></td>
+                    <td>develop, site, web, together, world, community, navigation, international, time, public, organizations, wide, full, standards, staff, w3c, work</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>crossorigin.me</a></td>
+                    <td>proxy, cors, welcome, everyone, crossorigin, free</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>cdnjs.com</a></td>
+                    <td>follow, angular, best, speed, get, web, open, foss, websites, end, com, plugin, png, css, cdnjs, github, library, cdn, dave, twitter, libraries, free, ng, jquery, front, peter, news, hello, js, source, related, latest</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>ip-api.com</a></td>
+                    <td>address, xml, api, com, json, ip, localization, required, php, geolocation, free, geoip, location, lookup, csv, javascript</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>mr-kumar-abhishek.github.io</a></td>
+                    <td>welcome, site, web, temporary, applications, hi, progress, website, blog, software, well, kumar, design, developer, reference, work, come, desktop</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.tutorialrepublic.com</a></td>
+                    <td>welcome, development, references, web, examples, essentials, technologies, tutorials, website, republic, online, make, interactive, tutorial, build, learn</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>teamtreehouse.com</a></td>
+                    <td>offers, python, choose, get, web, today, course, job, learning, career, within, javascript, new, start, library, need, become, skills, coding, day, ios, months, free, design, much, started, content, learn, code</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.udacity.com</a></td>
+                    <td>best, code, join, courses, online, free, learn, list, classes</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>freegeoip.net</a></td>
+                    <td>provides, like, developers, latitude, api, zone, ip, net, search, information, software, relevant, time, longitude, public, http, geolocation, free, database, uses</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>wind-bow.hyperdev.space</a></td>
+                    <td>data, requests, documentation, code, get, server, accepts, serves, complete, users, api, according, challenge, usage, use, wind, free, user, rate, url</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.udemy.com</a></td>
+                    <td>data, marketing, course, marketplace, learning, programming, schedule, anything, teaching, take, courses, online, life, science, students, learn</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>ajax.googleapis.com</a></td>
+                    <td>stable, speed, open, developers, high, popular, hosted, available, network, reliable, google, libraries, content, javascript, source</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>raw.githubusercontent.com</a></td>
+                    <td>built, code, development, way, inspired, millions, together, open, projects, developers, world, host, github, business, platform, software, leading, better, build, work, source</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.bootstrapcdn.com</a></td>
+                    <td>start, awesome, cdn, bootstrap, font, maxcdn, recommended</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>repl.it</a></td>
+                    <td>including, python, nodejs, ide, haskell, swift, cloud, provide, clojure, everything, react, teach, powerful, programming, run, compile, many, css, coffeescript, need, node, languages, online, php, coding, java, one, ruby, es6, simple,
+                        console, html, js, javascript, learn, code, go</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>scotch.io</a></td>
+                    <td>development, top, web, training, practical, building, fun, code</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>maps.googleapis.com</a></td>
+                    <td>millions, web, users, developers, websites, maps, platform, available, use, power, android, ios, http, every, google, apis, services, via, location, browsers, apps</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>startbootstrap.com</a></td>
+                    <td>easy, way, open, websites, bootstrap, collection, even, faster, forever, start, templates, date, use, download, themes, free, source, develop</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.smashingmagazine.com</a></td>
+                    <td>pages, professional, web, magazine, like, developers, though, end, techniques, run, useful, books, friendly, new, use, well, know, designers, keep, publish, running, front, design, patterns, dedicated, smashing</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.npmjs.com</a></td>
+                    <td>discover, ways, packages, amazing, powerful, world, javascript, npm, new, things, software, largest, free, reusable, package, build, manager, code</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.codecademy.com</a></td>
+                    <td>project, code, best, next, hear, learning, websites, programming, career, new, help, building, time, coding, one, free, nothing, learn</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>cdn.rawgit.com</a></td>
+                    <td>type, raw, directly, headers, production, use, content, url, rawgit, proper, serves, files, github</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>learn.shayhowe.com</a></td>
+                    <td>advanced, css, front, book, written, code, end, designer, developer, learn, beginner, html</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>npmcdn.com</a></td>
+                    <td>npm, global, content, stuff, network, fast, published</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.tutorialspoint.com</a></td>
+                    <td>access, globe, lab, server, millions, right, asp, teach, angular2, internet, thinking, theory, spring, business, security, java, dashboard, development, mvc, examples, join, sql, things, search, time, power, view, behavior, apache,
+                        reference, driven, erlang, web, testing, cpanel, programming, us, tutorials, connect, coffeescript, library, touch, online, free, design, rate, computer, clojure, marketing, charts, around, net, cakephp, pi, firebase, enjoy, extra</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>jqueryui.com</a></td>
+                    <td>choice, widgets, built, add, top, web, effects, applications, whether, set, interactions, form, javascript, library, need, building, curated, date, themes, jquery, interactive, control, user, interface, ui</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>learn.jquery.com</a></td>
+                    <td>tos, lot, documentation, best, web, right, applications, learning, api, practices, sites, building, jquery, center, common, looking, explanations, place, basics, problems, learn</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>html5doctor.com</a></td>
+                    <td>elements, today, like, developers, number, used, time, idea, element, html5, helping, level</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>code.tutsplus.com</a></td>
+                    <td>tuts, development, web, everything, applications, like, join, envato, tutorials, community, devices, courses, help, skills, online, improve, software, coding, would, free, workflow, thousands, mobile, learn, code</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>bootsnipp.com</a></td>
+                    <td>elements, snippets, find, web, home, developers, com, bootstrap, framework, javascript, css, using, playground, html, designers, free, element, jquery, design, js, code, gallery</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>kyleschaeffer.com</a></td>
+                    <td>project, sharepoint, web, together, like, currently, details, available, send, design, work</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>atom.io</a></td>
+                    <td>editor, without, yet, see, tool, core, wanted, ever, anything, always, also, github, building, century, use, day, modern, text, first, file, build, customize</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>bootstrapcreative.com</a></td>
+                    <td>resources, web, learning, quickly, websites, tutorials, bootstrap, framework, sites, beginners, css, start, help, building, using, want, design, fast, helping, responsive, build, learn</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.creativebloq.com</a></td>
+                    <td>trending, people, art, tutorials, inspiration, thinking, expert, creative, design, tips, daily</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>netdna.bootstrapcdn.com</a></td>
+                    <td></td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>jquery.com</a></td>
+                    <td>module, also, less, library, jquery, write, javascript</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>sixrevisions.com</a></td>
+                    <td>generated, web, website, need, blog, client, first, know, fix, design, last, javascript</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>tympanus.net</a></td>
+                    <td>articles, resources, development, web, effects, jun, tutorials, techniques, inspiration, ideas, useful, new, blog, creative, playground, publishes, interaction, letter, design, trends, latest</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>api.jqueryui.com</a></td>
+                    <td>widgets, built, documentation, site, top, ui, effects, set, learning, api, demos, interactions, tutorials, javascript, also, new, main, library, check, information, want, themes, full, jquery, center, user, interface, curated</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>openweathermap.org</a></td>
+                    <td>get, forecasts, deliver, openstreetmap, charts, graphics, openweather, maps, world, forecast, history, around, city, helpful, available, day, openweathermap, wind, interactive, location, daily, per, days, current, weather, reference</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>rawgit.com</a></td>
+                    <td>type, raw, directly, headers, production, use, content, url, rawgit, proper, serves, files, github</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>code.visualstudio.com</a></td>
+                    <td>cloud, editor, web, applications, features, linux, fixes, visual, optimized, windows, new, debugging, building, platform, osx, available, modern, read, meet, free, mac, version, studio, code</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>mdbootstrap.com</a></td>
+                    <td>elements, icons, material, tutorials, bootstrap, community, css, plugins, new, templates, animations, large, files, free, design, sass, news, javascript, ui</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.reddit.com</a></td>
+                    <td>com, internet, page, goal, search, use, submit, following, front, daily</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>hackerthemes.com</a></td>
+                    <td>resources, project, speed, developers, bootstrap, templates, creative, themes, ambitious, tools, build</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.9bitstudios.com</a></td>
+                    <td>widgets, numerous, development, web, designs, applications, tutorials, studios, plugins, website, templates, cms, blog, php, use, themes, jquery, featured, plus, wordpress, javascript</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>docs.angularjs.org</a></td>
+                    <td>data, angular, site, web, mvc, side, dependency, implemented, angularjs, great, latest, templates, building, testability, declarative, pure, would, client, html, v1, binding, injection, story, apps, refers, javascript, go, designed</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.sololearn.com</a></td>
+                    <td>python, learning, css, coding, java, effective, html, free, better, fun, javascript, learn, code</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>thenewcode.com</a></td>
+                    <td>css3, including, editor, code, development, web, magazine, svg, speaker, aspects, new, using, author, html5, write, smashing, projects</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>ipinfo.io</a></td>
+                    <td>speed, address, rest, api, ip, details, information, comprehensive, network, geolocation, io</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.theodinproject.com</a></td>
+                    <td>project, development, web, together, stop, developers, rails, need, using, time, ruby, know, free, scroll, learn</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.slant.co</a></td>
+                    <td>hard, choose, best, sure, want, work, home</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>modernweb.com</a></td>
+                    <td>software, working, development, top, modern, companies, web</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.cambiaresearch.com</a></td>
+                    <td>articles, snippets, stack, microsoft, subscribe, developers, com, net, programmers, software, email, better, via, javascript, code</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>bootstrapbay.com</a></td>
+                    <td>quality, theme, trending, project, find, next, web, today, marketplace, high, sell, bootstrap, premium, templates, themes, buy</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.minimit.com</a></td>
+                    <td>frontend, articles, resources, publish, blog, write, solutions, plugins</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>wesbos.com</a></td>
+                    <td>code, web, awesome, course, designer, core, api, entrepreneur, new, start, skills, php, use, making, es6, jquery, place, wordpress, developer, javascript</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.kirupa.com</a></td>
+                    <td>really, function, forums, web, awesome, quickly, programming, tutorials, css, variable, become, html, animation, better, content, javascript, developer</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.hongkiat.com</a></td>
+                    <td>technology, bloggers, please, web, covering, tool, users, graphic, tutorials, com, menu, inspiration, useful, tech, photography, main, facebook, blog, information, twitter, google, browser, designers, design, experience, better, artworks,
+                        tips, enjoy, tools, wordpress, javascript, photoshop</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>keithclark.co.uk</a></td>
+                    <td>uk, game, inspired, web, end, iconic, based, scrolling, front, winning, developer</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>codebeautify.org</a></td>
+                    <td>access, please, web, temporary, complete, property, required, check, security, step, one, org, human</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>devdocs.io</a></td>
+                    <td>including, python, documentation, offline, api, css, php, ruby, html, browser, jquery, javascript, fast, docs, go</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>1stwebdesigner.com</a></td>
+                    <td>code, find, professional, web, frontend, developers, collection, bootstrap, popular, professionals, mission, many, css, help, templates, php, editors, html, designers, simple, design, much, helping, better, newsletter, js, build, wordpress</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>meyerweb.com</a></td>
+                    <td>com, web, grid</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>blog.risingstack.com</a></td>
+                    <td>things, node, blog, engineering, js, javascript</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>lea.verou.me</a></td>
+                    <td>years, project, without, yes, server, web, today, course, applications, open, two, programming, working, getting, language, many, edge, mit, finally, creating, based, paid, html, standards, life, last, fun, named, work, source</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.mattboldt.com</a></td>
+                    <td>articles, social, development, web, svg, tutorials, demos, beautiful, css, rails, buttons, pure, ruby, html, design, javascript</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.yourtechchick.com</a></td>
+                    <td>technology, articles, way, providing, useful, tech, information, tips, dedicated, tricks, learn, related</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>static.jsbin.com</a></td>
+                    <td>forbidden</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.lingulo.com</a></td>
+                    <td>resources, development, web, like, developers, tutorials, com, useful, great, plugins, scripts, page, written, blog, well, simple, offering, featured, tips</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>toddmotto.com</a></td>
+                    <td>articles, angular, react, teach, speaker, world, expert, motto, google, html5, developer, javascript</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>hughfdjackson.com</a></td>
+                    <td>post, years, haskell, two, functions, programming, easily, business, love, help, blog, functional, software, using, power, read, every, letter, better, helps, month, little, javascript, since</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>azmind.com</a></td>
+                    <td>psd, admin, resources, pages, welcome, find, forms, best, icons, web, tutorials, bootstrap, many, premium, templates, files, themes, free, design, wordpress, dashboard</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>blog.getbootstrap.com</a></td>
+                    <td>bootstrap, popular, framework, world, css, blog, official, themes, embracing, html, js, announcements</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>h1tag.github.io</a></td>
+                    <td>pages, found, site, github</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.breakthrusoftware.com</a></td>
+                    <td>music, game, welcome, effects, tool, custom, speaker, zone, products, need, time, software, key, player, design, systems, games, manager, matrix, announcements</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.codewars.com</a></td>
+                    <td>css3, mastery, challenges, code, development, web, developers, programming, train, coffeescript, challenge, coding, software, ruby, javascript, practice</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.packtpub.com</a></td>
+                    <td>uk, technology, access, editor, account, videos, technologies, us, professionals, edge, books, coding, software, leading, publishing, helping, contact, content, work</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>valor-software.com</a></td>
+                    <td>software</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>designshack.net</a></td>
+                    <td>articles, way, art, particularly, right, web, complex, word, side, name, different, inspiration, form, guides, community, take, type, read, design, news, daily, logo, source, gallery</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>rachelandrew.co.uk</a></td>
+                    <td>really, uk, resources, writing, archive, site, find, posts, web, speaker, com, presentation, managing, website, cms, blog, public, founder, product, author, developer, work, little, podcasts</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>getbootstrap.com.br</a></td>
+                    <td>web, end, bootstrap, framework, popular, de, css, first, html, front, js, mobile</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>chibicode.com</a></td>
+                    <td>site, designer, personal, world, currently, hello, developer</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>fuqua.io</a></td>
+                    <td>io</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>debugmode.net</a></td>
+                    <td>kumar, hosted, angular, microsoft, developer, free</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>parall.ax</a></td>
+                    <td>london, digital, development, way, marketing, see, web, hear, seo, working, us, form, things, love, using, global, award, send, email, message, looking, winning, content</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>w3lessons.info</a></td>
+                    <td></td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>stanhub.com</a></td>
+                    <td>articles, resources, python, development, web, amazing, different, sql, knowledge, line, tutorials, useful, delete, blog, php, improve, multiple, use, directories, command, lots, publishes, files, free, folder, workflow, mac, design,
+                        much, specific, better, interface, wordpress, learn</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>blog.jetstrap.com</a></td>
+                    <td>builder, blog, big, bootstrap</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.malot.fr</a></td>
+                    <td>webmaster, webdesigner, site, web, portfolio, designer, internet, de, css, php, mysql</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>bob.ippoli.to</a></td>
+                    <td>data, times, years, different, create, past, publishing, html, documents, javascript, development, ways, found, using, well, hack, python, erlang, web, tasks, thing, nothing, template, tools, haskell, job, recently, great, mission,
+                        etc, software, done, maybe, desktop</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>w3layouts.com</a></td>
+                    <td>quality, css3, supported, easy, account, designs, error, com, world, new, website, friendly, create, premium, templates, download, browser, free, widget, html5, mobile, responsive, designed</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>crossorigin</a></td>
+                    <td></td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>mathjs.org</a></td>
+                    <td>offers, data, built, easy, function, extensive, features, complex, comes, set, like, number, functions, different, powerful, advanced, types, library, variable, node, big, use, numbers, solution, large, math, js, work, javascript,
+                        support, matrix</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.muicss.com</a></td>
+                    <td>frameworks, copy, forms, get, react, material, bootstrap, framework, css, friendly, paste, using, small, google, html, lightweight, email, design, started, developer, fast, designed</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>jquerymobile.com</a></td>
+                    <td>system, web, accessible, framework, optimized, sites, devices, touch, based, make, jquery, html5, user, interface, apps, mobile, responsive, desktop, designed</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.cssscript.com</a></td>
+                    <td>pretty, elements, css3, cool, javascript, script, css, library, apply, animations, free, scroll, html5</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>ftp.micronet-rostov.ru</a></td>
+                    <td></td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>line25.com</a></td>
+                    <td>including, resources, articles, clients, provides, cool, web, designs, teach, tutorials, inspiration, ideas, guides, useful, many, new, website, article, help, start, skills, platform, blog, using, improve, must, read, design, experience,
+                        plus, tips, tricks, learn, related</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>image.slidesharecdn.com</a></td>
+                    <td></td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>javascriptissexy.com</a></td>
+                    <td>application, resources, social, development, guide, web, course, two, developers, media, though, end, guides, javascript, beginners, article, help, book, online, comprehensive, modern, paid, first, one, free, specific, uses, build,
+                        js, learn</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>blog.garstasio.com</a></td>
+                    <td>various, understanding, web, api, need, help, modern, libraries, embracing, free, jquery, fill</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>geoip-db.com</a></td>
+                    <td>geoip, forgot, ip, password, geolocation, click, address</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>bootstrapdocs.com</a></td>
+                    <td>documentation, archive, bootstrap, twitter</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>photos-1.dropbox.com</a></td>
+                    <td>dropbox, error</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>ariya.io</a></td>
+                    <td>firebase, site, performance, io, read</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>sarfraznawaz.wordpress.com</a></td>
+                    <td>jquery, mysql, blog, search, php, html, javascript, css, ajax</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.rtfmanual.io</a></td>
+                    <td>articles, easy, programming, tutorials, css, become, using, use, series, make, topics, simple, javascript</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.wickedlysmart.com</a></td>
+                    <td>resources, mastery, project, welcome, code, forums, way, css, new, challenge, book, software, html, looking, fun, javascript</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.vanillalist.com</a></td>
+                    <td>jquery, svg, using, progress, js, repository, javascript, list</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.appelsiini.net</a></td>
+                    <td>years, clever, way, find, provide, together, areas, last, location</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>qnimate.com</a></td>
+                    <td>code, function, development, provide, web, address, error, maintained, programming, seo, tutorials, client, raw, much, app, content, wordpress, mobile</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.pdf-archive.com</a></td>
+                    <td>upload, document, welcome, archive, web, hosting, schedule, com, presentation, form, kit, easily, restore, required, facebook, press, forum, twitter, files, free, file, share, newsletter, repair, documents, release, secure, service</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>gpiot.com</a></td>
+                    <td>uk, creator, application, project, development, management, web, designer, also, website, start, business, online, based, founder, design, user, interface, app, developer</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>en.wikiquote.org</a></td>
+                    <td>main, works, page, categories, browse, projects, themes</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.codeschool.com</a></td>
+                    <td>challenges, welcome, code, programming, tutorials, javascript, css, thing, courses, practice, browser, html, looking, video, screencasts, learn</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>imperavi.com</a></td>
+                    <td>simple, developers, charts, powerful, yet, web, beautiful, professional, applications</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>appendto.com</a></td>
+                    <td>frameworks, development, get, lab, web, today, custom, training, developers, end, team, train, courses, building, languages, coding, based, solutions, libraries, front, teams, news, tips, developer, learn, latest</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.dreamincode.net</a></td>
+                    <td>snippets, forums, development, get, web, programming, tutorials, visual, basic, community, css, help, net, php, browse, java, html, javascript, experts, general</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>query.yahooapis.com</a></td>
+                    <td>console, hello</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>localhost:63342</a></td>
+                    <td></td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>amazingcarousel.com</a></td>
+                    <td>easy, published, amazing, module, image, plugin, also, windows, create, use, mac, jquery, drupal, app, wordpress, responsive</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>cssreset.com</a></td>
+                    <td>copy, documentation, complete, side, property, tutorials, popular, guides, css, scripts, paste, use, one, common, table, place, customize</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>rosettacode.org</a></td>
+                    <td>contents, code, site, learning, different, though, programming, tasks, present, language, task, many, currently, demonstrate, languages, solutions, idea, one, every, problem, possible, approach, cannot</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>html.com</a></td>
+                    <td>welcome, forms, guide, get, tags, provide, learning, com, getting, frames, guides, css, help, goal, helpful, html, free, fast, fun, started, tables, reference, learn, code</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>wiki.selfhtml.org</a></td>
+                    <td>html, wiki</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.pluralsight.com</a></td>
+                    <td>unlimited, extensive, industry, training, demand, authored, tech, courses, library, skills, online, creative, pluralsight, developer, learn, experts</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>paperjs.org</a></td>
+                    <td>js, paper</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.jqueryscript.net</a></td>
+                    <td>css3, best, way, provide, web, examples, developers, websites, tutorials, variety, plugin, javascript, script, plugins, download, one, view, designers, free, jquery, simple, html5, updates, mobile, latest</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>egghead.io</a></td>
+                    <td>frameworks, development, get, professional, guide, videos, web, react, training, developers, join, career, end, tutorials, angularjs, edge, take, help, size, modern, front, control, tutorial, video, tools, javascript, io, learn</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>tutorialzine.com</a></td>
+                    <td>quality, articles, resources, welcome, development, web, together, developers, high, tutorials, ever, community, talented, library, read, free, share, growing, learn, code</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>codemyviews.com</a></td>
+                    <td>development, ibm, stop, deliver, amazing, like, demand, hire, team, start, time, agencies, works, teams, code, service</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>coderwall.com</a></td>
+                    <td>development, web, git, projects, os, programming, end, line, popular, community, great, new, rails, net, programmers, something, learn, command, android, ios, ruby, share, design, front, tips, tools, developer, javascript, nodejs,
+                        latest
+                    </td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>packagecontrol.io</a></td>
+                    <td>trending, find, packages, makes, date, text, simple, keep, control, package, manager</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>vanseodesign.com</a></td>
+                    <td>friendly, design, hi, search, web</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.codementor.io</a></td>
+                    <td>provides, categories, development, top, sharing, developers, demand, programming, across, hire, expert, faster, tech, help, software, coding, text, freelance, live, via, video, instant, build, developer, projects, code, screen, experts</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>tutorialrepublic.com</a></td>
+                    <td>welcome, development, references, web, examples, essentials, technologies, tutorials, website, republic, online, make, interactive, tutorial, build, learn</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.html.am</a></td>
+                    <td>copy, editor, easy, code, find, tags, web, stop, font, tutorials, image, link, beginners, images, css, website, things, paste, online, coding, editors, text, one, layout, html, free, scroll, tutorial, video, resource, background, javascript,
+                        music
+                    </td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>dev.w3.org</a></td>
+                    <td>w3c, public, repository</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>demos.creative-tim.com</a></td>
+                    <td></td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>errors.angularjs.org</a></td>
+                    <td>data, angular, site, web, mvc, side, dependency, implemented, angularjs, great, latest, templates, building, testability, declarative, pure, would, client, html, v1, binding, injection, story, apps, refers, javascript, go, designed</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.oneskyapp.com</a></td>
+                    <td>quality, easy, system, management, users, websites, made, localization, workflow, services, helping, thousands, games, app, companies, apps, content</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.wikidata.org</a></td>
+                    <td>navigation, page, menu, main</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>wrapbootstrap.com</a></td>
+                    <td>rock, admin, css3, theme, clients, development, marketplace, foundation, sell, bootstrap, framework, sites, premium, help, templates, using, themes, buy, html5, responsive, designed</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>ajayt365.github.io</a></td>
+                    <td>learning, hello, beautiful, world, homepage</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>jaketrent.com</a></td>
+                    <td>productivity, code, topics, tech, around</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>javascript.info</a></td>
+                    <td>contents, including, document, examples, programming, tasks, advanced, modern, topics, simple, tutorial, table, basics, done, javascript, explanations</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.khanacademy.org</a></td>
+                    <td>resources, created, videos, lessons, expert, anything, forever, always, website, courses, skills, online, learn, every, everyone, math, free, message, content, practice, loading, level</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>nodejs.org</a></td>
+                    <td>model, built, event, open, makes, world, non, npm, source, node, chrome, largest, download, libraries, lightweight, uses, engine, package, js, javascript, driven</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>dl.dropboxusercontent.com</a></td>
+                    <td>dropbox, error</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>j4n.co</a></td>
+                    <td>globe, code, art, designer, home, end, profit, around, ux, based, freelance, interaction, design, front, user, fun, interface, companies, developer, ui</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>addons.mozilla.org</a></td>
+                    <td>explore, add, way, web, mozilla, firefox, ons, available, download, free, thousands, fast</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>medialoot.com</a></td>
+                    <td>resources, access, easy, unlimited, get, icons, fonts, start, premium, check, templates, view, free, design</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>usher.ttvnw.net</a></td>
+                    <td></td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.standardista.com</a></td>
+                    <td>css3, html5, js</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>learnswfobject.com</a></td>
+                    <td>friendly, questions, comments, system, using, tutorials, learn, standards</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.digitaltrends.com</a></td>
+                    <td>technology, digital, news, expert, reviews, source, trends, product</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>momentjs.com</a></td>
+                    <td>times, home, terms, javascript, mit, js</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>ipapi.co</a></td>
+                    <td>address, xml, latitude, api, json, ip, city, longitude, paid, free, fast, location, lookup, instant, csv, secure</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>miracle.site40.net</a></td>
+                    <td>follow, area, could, process, get, web, cpanel, hosting, also, new, website, need, help, premium, php, still, free, simple, mysql, enjoy, since</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.ronaldwidha.net</a></td>
+                    <td>digital, people, everything, productivity, core, host, tech, paper, net, works, running, level</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>thisdavej.com</a></td>
+                    <td>various, including, node, provides, recent, tutorials, com, js, posts, pi, topics, home</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty"
+                            style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>xahlee.info</a></td>
+                    <td>entire, tutorials, free, programing, download, every, offline, code</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>dcrazed.com</a></td>
+                    <td>articles, best, web, websites, graphic, inspiration, unique, also, plugins, templates, blog, creating, make, google, themes, free, design, brings, wordpress</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>zerosixthree.se</a></td>
+                    <td>requests, media, javascript, http, one</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>mathiasbynens.be</a></td>
+                    <td>follow, get, web, hi, end, performance, css, github, security, twitter, html, standards, front, developer, javascript</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>robertnyman.com</a></td>
+                    <td>site, development, people, see, web, amazing, future, world, fantastic, css, history, firefox, lots, meet, html, standards, javascript, change, talk</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>ianlunn.co.uk</a></td>
+                    <td>quality, really, clients, without, development, expected, web, portfolio, designer, makes, websites, high, end, working, us, stand, talented, time, improvements, product, experience, front, user, better, approach, wordpress, developer,
+                        work, responsive</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>ramdajs.com</a></td>
+                    <td>library, functional, documentation, practical, programmers, javascript</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>codeitdown.com</a></td>
+                    <td>model, everywhere, digital, development, understanding, web, com, theory, must, colors, computers, use, color, design, phones, basics</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>wordpress.stackexchange.com</a></td>
+                    <td>developers, explore, questions, stack, development, wordpress</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.airpair.com</a></td>
+                    <td>resources, development, web, react, productivity, programming, rails, help, coding, software, integrate, ruby, js, build, apps, consultants</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>scottiestech.info</a></td>
+                    <td>technology, social, could, musings, click, two, media, programming, run, tech, blog, computers, repair, support</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.mkyong.com</a></td>
+                    <td>london, resources, provides, development, web, developers, tutorials, unique, spring, android, java, simple, jquery</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>quotes.stormconsultancy.co.uk</a></td>
+                    <td>hand, beer, programming, collection, quotes, engineer, science, computer</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>addyosmani.com</a></td>
+                    <td>angular, web, material, react, open, like, learning, working, com, performance, engineering, team, javascript, also, source, books, written, building, chrome, engineer, make, google, libraries, stories, author, design, patterns, webpack,
+                        easier, apps, tooling, manager, projects</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>callmenick.com</a></td>
+                    <td>explore, call, development, musings, understanding, part, end, tutorials, using, series, front, webpack, work</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>css3.bradshawenterprises.com</a></td>
+                    <td>css3, parts, designed, guide, examples, practical, demos, sites, css, website, help, using, firefox, use, chrome, modern, animations, make, animation, tutorial, build, work</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.webmaster-source.com</a></td>
+                    <td>quality, resources, webmaster, site, bloggers, web, hosting, tutorials, internet, blogging, image, ever, popular, useful, css, ajax, extremely, information, blog, php, coding, webmasters, colors, links, modern, size, layout, html,
+                        files, color, design, tips, template, video, wordpress, photoshop, source</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>docs.npmjs.com</a></td>
+                    <td>stable, documentation, getting, npm, things, version, looking, started, place, current, docs</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.vinaypuppal.com</a></td>
+                    <td>hello</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.tizag.com</a></td>
+                    <td>welcome, web, right, teach, tutorials, css, programmers, use, html, beginner, designed</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>ejohn.org</a></td>
+                    <td>creator, parts, best, numerous, development, web, programming, techniques, world, popular, language, expert, javascript, known, also, pro, books, continue, library, modern, day, jquery, author, created, projects</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.javascripter.net</a></td>
+                    <td>game, guide, example, examples, demos, collection, quiz, script, demo, great, featuring, online, net, tutorial, games, javascript, code</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>lesscss.org</a></td>
+                    <td>server, examples, side, functions, getting, css, node, modern, use, download, client, behavior, started, browsers, js, less</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>macengr.wordpress.com</a></td>
+                    <td>really, times, various, back, job, teach, sql, world, connect, javascript, currently, explores, finally, coding, engineer, well, life, systems, per, developer, work</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>jhtmlcss.blogspot.com</a></td>
+                    <td>css, design, tips, javascript, using, web, tricks, html</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>snook.ca</a></td>
+                    <td>years, easy, processes, find, development, way, posts, see, web, like, different, across, working, images, devices, take, time, multiple, something, especially, move, big, date, past, folder, phones, tips, couple, tricks</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>webdesign.about.com</a></td>
+                    <td>resources, pages, best, find, web, beautiful, variety, javascript, great, css, devices, website, windows, help, editors, html, free, design, work, responsive, develop</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>davidmiller.io</a></td>
+                    <td>creator, posted, media, bootstrap, managing, start, blog, creating, official, scroll</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>v3.bootcss.com</a></td>
+                    <td>frontend, front, javascript, end, html, bootstrap, development, js, framework, web, css</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>thinkster.io</a></td>
+                    <td>swift, best, way, covering, web, applications, tutorials, angularjs, create, better, reusable, place, screencasts, mobile, learn, ionic</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.sanwebe.com</a></td>
+                    <td>last, name, generate, user, blog, tips, php, tutorials, development, com, first, web, features, subscribe</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>kunalgupta05.github.io</a></td>
+                    <td>pages, found, site, github</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.yourhtmlsource.com</a></td>
+                    <td>web, tutorials, aspects, popular, beginners, advanced, links, well, html, design, webmasters, source</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>cameronspear.com</a></td>
+                    <td>foundation, cameron, stuff, developing, article, series, first, tooling, give</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>brm.io</a></td>
+                    <td>html5, engine, io, code</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>dailyjs.com</a></td>
+                    <td>blog, javascript</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>jqueryvalidation.org</a></td>
+                    <td>choice, application, english, including, easy, providing, error, comes, makes, set, good, existing, api, plugin, url, form, useful, also, new, building, languages, lots, customization, something, still, integrate, email, jquery, simple,
+                        offering, markup, write, come</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>webdesignerwall.com</a></td>
+                    <td>theme, design, web, tutorials, ideas, wordpress, wall, designer, trends</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>docs.nodejitsu.com</a></td>
+                    <td>articles, code, provide, com, collection, basic, range, community, advanced, node, written, relevant, growing, design, insights, js, curated, docs</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.javascriptkit.com</a></td>
+                    <td>welcome, stop, tutorials, kit, css, ajax, main, scripts, dom, comprehensive, areas, html, free, tutorial, resource, content, javascript</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.htmlhelp.com</a></td>
+                    <td>cascading, stylesheet, site, style, provide, web, references, material, questions, maintained, accessible, com, frames, language, css, help, making, layout, html, design, sheets, tips, markup, reference</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>javascriptweblog.wordpress.com</a></td>
+                    <td>navigation, posts, javascript</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>alistapart.com</a></td>
+                    <td>comments, best, development, people, web, websites, special, practices, explores, make, workflows, standards, color, design, accessibility, content, list</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>webdesign.tutsplus.com</a></td>
+                    <td>yet, tuts, development, web, like, whether, join, learning, discovered, envato, end, tutorials, community, guides, professionals, team, expert, courses, help, skills, business, ux, online, improve, coding, something, would, free, workflow,
+                        design, accessibility, students, front, thousands, interface, learn</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.ibm.com</a></td>
+                    <td>week, ibm, today, word, world, century, matter, creating, client, every, dedicated, success</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>blog.mgechev.com</a></td>
+                    <td>theme, angular, designer, blog, consider, template, tools, responsive, michael</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>benfrain.com</a></td>
+                    <td>web, speaker, book, live, author, hello, contact, developer</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>css-snippets.com</a></td>
+                    <td>elements, css3, snippets, add, development, web, websites, menu, tutorials, special, sites, css, demonstrate, navigation, paste, lots, use, one, html, topics, tutorial, video, code, talk</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>microblog.anthonyestebe.com</a></td>
+                    <td>model, upload, example, like, different, white, even, scss, create, colors, ruby, widget, control, include, logo, work, already, compile, css, rails, templates, time, customization, still, problem, dev, cannot, stylesheet, call, provide,
+                        course, hard, according, products, thing, one, fix, design, tips, service, really, let, please, fonts, needs, change</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>nodecasts.io</a></td>
+                    <td>including, site, get, inspired, videos, web, today, learning, quickly, tutorials, performance, range, things, courses, node, wide, topics, free, interactive, started, resource, js, javascript, learn</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>websolutionsdone.com</a></td>
+                    <td>web, recommended, different, blogging, great, website, blog, submit, directories, solutions, done, list, important</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.javascript-coder.com</a></td>
+                    <td>handling, articles, submitting, tutorials, com, submit, buttons, form, javascript</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>ihatetomatoes.net</a></td>
+                    <td>could, professional, end, help, business, online, front, melbourne, developer, little</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>alijafarian.com</a></td>
+                    <td>digital, welcome, entrepreneur, extremely, software, engineer</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>api.myjson.com</a></td>
+                    <td></td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>imperativeideas.com</a></td>
+                    <td>server, web, error, com</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.html5canvastutorials.com</a></td>
+                    <td>html5, articles, tutorial, us, tutorials, demos, code, examples</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.himpfen.com</a></td>
+                    <td>latest, welcome, official, work, photography, website</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>perishablepress.com</a></td>
+                    <td>lot, find, development, reviews, professional, provide, web, set, discovered, sql, tutorials, recently, mission, css, tech, plugins, functionality, press, book, security, time, php, software, something, client, read, themes, html,
+                        email, jquery, author, design, works, dev, better, tips, apache, wordpress, developer, javascript, code</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>idiallo.com</a></td>
+                    <td>code, clever, programming, tutorials, featuring, blog, entries, text, life, human, insights, recent, tips, hack, daily, write, programing</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>a11yproject.com</a></td>
+                    <td>accessibility, tos, project, make, web, easier, community, driven</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>wordpress.org</a></td>
+                    <td>best, tool, open, beautiful, website, create, platform, blog, cms, software, use, trusted, org, publishing, app, wordpress, source</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>blog.movalog.com</a></td>
+                    <td></td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>4dev.tech</a></td>
+                    <td>develop, entire, really, angular, easy, add, let, next, development, get, web, complex, already, angular2, tutorials, image, beginners, start, node, php, creating, step, move, java, every, make, important, one, beginner, much, experience,
+                        possible, tutorial, started, easier, js, javascript, gallery</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>prasadhonrao.com</a></td>
+                    <td>application, technology, project, code, without, forums, thought, today, error, asp, mvc, found, core, bin, many, around, delete, success, morning, net, using, size, big, got, key, first, folder, problem, simple, message, maybe, created,
+                        source, go</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.webdesignerdepot.com</a></td>
+                    <td>resources, webdesigner, week, development, icons, web, designer, graphic, tutorials, popular, css, plugins, photography, blog, download, twitter, designers, free, design, news, include, tools, wordpress, developer, photoshop</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>lifeinthegrid.com</a></td>
+                    <td>rock, easy, site, get, professional, videos, millions, discovered, seconds, presentation, getting, showing, grid, many, stand, tech, new, around, net, first, life, tips, daily, video, tools, logo</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>demos.codexworld.com</a></td>
+                    <td>jquery, mysql, programming, ajax, php, codexworld, tutorials, development, project, coding, demos, download, web, view, demo, script, live</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.codexworld.com</a></td>
+                    <td>data, development, ways, web, custom, programming, good, module, api, tutorials, com, demos, plugin, world, demo, script, task, many, ajax, restore, scripts, facebook, cms, blog, using, php, cakephp, codexworld, available, download,
+                        twitter, view, every, idea, google, live, free, jquery, file, mysql, database, drupal, possible, tutorial, helps, tables, wordpress, javascript, developer, learn, source, code, important</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.codeproject.com</a></td>
+                    <td>articles, sign, code, get, industry, developers, jun, tutorials, morning, software, free, news, source, latest</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>codedump.io</a></td>
+                    <td>share, others, code</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>labs.omniti.com</a></td>
+                    <td>clients, welcome, code, generated, way, back, cool, open, foss, us, working, stuff, community, products, source, website, things, php, staff, generate, repository, give, projects</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.webucator.com</a></td>
+                    <td>python, provides, microsoft, sharepoint, server, training, join, sql, technologies, courses, online, php, needs, trusted, organizations, java, live, html5, much, javascript, photoshop, classes</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>ageekandhisblog.com</a></td>
+                    <td></td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.graphics.com</a></td>
+                    <td>design, articles, navigation, graphics, news, daily, brings, com, inspiration</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>ctrlq.org</a></td>
+                    <td>technology, years, forms, popular, also, scripts, business, workflows, science, developer, work, processes, add, name, personal, maps, guides, first, wall, sheets, apps, universities, docs, writing, professional, web, several, users,
+                        tutorials, tech, help, improve, ons, featured, since, projects, computer, engineering, authored, script, software, google, experience, companies, done</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.crossorigin.me</a></td>
+                    <td>proxy, cors, welcome, everyone, crossorigin, free</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>jsonplaceholder.typicode.com</a></td>
+                    <td>developers, testing, rest, online, api, json, server</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>blog.codeply.com</a></td>
+                    <td>hand, various, snippets, easy, add, development, process, example, examples, frontend, bootstrap, grid, css, new, thanks, required, variable, blog, coding, want, small, simple, design, consider, sass, named, less, extra, responsive</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>designsparkle.com</a></td>
+                    <td>technology, articles, digital, marketing, sure, already, comes, discovered, ever, world, need, business, online, especially, still, make, design, nothing, resource</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>bryanhadaway.com</a></td>
+                    <td>quality, technology, pretty, years, let, best, get, people, web, business, blog, finally, standards, go</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>parse.com</a></td>
+                    <td>redirecting</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.elated.com</a></td>
+                    <td>webmaster, resources, including, articles, archive, forums, development, get, site, web, future, tutorials, com, privacy, forum, free, updates, design, tips, tricks, month</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>gridus-html.neuethemes.net</a></td>
+                    <td>web, applications, team, unique, also, website, premium, templates, creating, make, html, themes, experienced, wordpress</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.cssdesignawards.com</a></td>
+                    <td>best, development, provide, web, accepts, inspiration, sites, css, website, studios, functionality, platform, international, creative, leading, award, numbers, official, agencies, freelance, designers, design, featured, experts, gallery</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>jsonapi.org</a></td>
+                    <td>way, tool, api, json, ever, team, building, apis</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>blog.engineyard.com</a></td>
+                    <td>engine, blog, platform, top, service, support</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>htmldog.com</a></td>
+                    <td>access, server, forbidden</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>ninodezign.com</a></td>
+                    <td>quality, psd, including, resources, top, web, sharing, material, designer, open, designs, knowledge, seo, tutorials, com, inspiration, range, javascript, css, blog, wide, html, topics, free, design, news, daily, dedicated, tools, developer,
+                        source
+                    </td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.electrictoolbox.com</a></td>
+                    <td>articles, linux, seconds, showing, blog, php, osx, mysql, apache, javascript</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>willschenk.com</a></td>
+                    <td>built, years, lot, different, products, tech, page, know, ago, maybe, since, yes</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>csscreator.com</a></td>
+                    <td>creator, post, area, thought, web, since, side, image, recently, images, css, required, blog, time, multiple, would, solution, share, design, last, background, content, screen</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>demos.flesler.com</a></td>
+                    <td>contents, right, home, part, demos, com, made, demo, plugins, available, use, homepage, jquery, table, javascript, visit</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>arnique.net</a></td>
+                    <td>theme, page, builder, blog, net, studio, bootstrap, official</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>forum.jquery.com</a></td>
+                    <td>jquery, support, foundation, forum</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>sacha.me</a></td>
+                    <td>clients, project, name, hi, websites, end, working, css, building, using, modern, small, html, design, front, build, companies, developer, javascript, latest</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.sabinanore.com</a></td>
+                    <td>visual, fantastic, modern, artworks, gallery</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>goings.me</a></td>
+                    <td></td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>blog.jquery.com</a></td>
+                    <td>post, expected, changes, fixes, wanted, also, available, jquery, experienced, work, javascript, see, comes, blog, official, still, full, write, days, list, set, quickly, library, improvements, one, ago, possible, build, less, release,
+                        new, apply, element</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>code.ionicframework.com</a></td>
+                    <td>cdn, maxcdn, framework, loading, ionic</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>jscroll.com</a></td>
+                    <td>pages, end, existing, link, plugin, within, known, also, ajax, new, etc, page, navigation, written, time, scrolling, jquery, scroll, via, content, current, area, loading</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.wdstandards.com</a></td>
+                    <td>developers, marketing, posts, designers</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.slideshare.net</a></td>
+                    <td>discover, site, top, professional, see, provide, sharing, today, knowledge, present, performance, world, community, functionality, continue, website, privacy, improve, relevant, use, largest, agree, policy, share, uses, user, content</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>recurial.com</a></td>
+                    <td>contact, michael</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>app.pluralsight.com</a></td>
+                    <td>pluralsight, sign, forgot, password</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.utexas.edu</a></td>
+                    <td>home, like, changes, join, us, world, teaching, global, motto, day, advance, every, ambitious, students</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>lab.abhinayrathore.com</a></td>
+                    <td>lab, bootstrap, plugin, player</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>w3techs.com</a></td>
+                    <td>various, technology, provides, extensive, management, web, technologies, world, products, types, usage, information, reliable, wide, featured, systems, content</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>startupquote.com</a></td>
+                    <td>things, making</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.the-art-of-web.com</a></td>
+                    <td>comments, welcome, development, art, particularly, web, linux, developers, sql, tutorials, collection, css, scripts, php, areas, solutions, google, html, growing, resource, javascript</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>jonocharlesdavey.com</a></td>
+                    <td>designs</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>emilolsson.com</a></td>
+                    <td>call, visit</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>rowanmanning.com</a></td>
+                    <td>beer, posted, web, personal, website, blog, loves, accessibility, problems, code</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>en.wiktionary.org</a></td>
+                    <td>english, menu, main, navigation, page, languages, entries, free</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>git.vacanor.com:81</a></td>
+                    <td></td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>js2ls.org</a></td>
+                    <td>javascript, code</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>developers.facebook.com</a></td>
+                    <td>facebook, developers, business, platform, helps, build</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>ip-api</a></td>
+                    <td></td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>oscarotero.com</a></td>
+                    <td>redirecting</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>angular.io</a></td>
+                    <td>angular, development, web, applications, mvc, framework, angularjs, faster, building, platform, one, google, mobile, javascript, desktop</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>blog.mashape.com</a></td>
+                    <td></td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>saijogeorge.com</a></td>
+                    <td>digital, welcome, top, marketing, consultants, name, seo, white, based, one, george, melbourne, hello</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.edx.org</a></td>
+                    <td>offers, including, best, find, world, history, courses, business, mit, online, topics, free, science, math, computer, include, others, universities, classes, latest</td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>html5layouts.com</a></td>
+                    <td></td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+                <tr>
+                    <td><a href='reference.html'>www.webweaver.nu</a></td>
+                    <td></td>
+                    <td><span class="glyphicon glyphicon-star-empty" style="font-size:.75em;" aria-hidden="true"></span></td>
+                </tr>
+
+
+            </table>
+        </div>
+
+
+    </section>
+
+    <footer></footer>
+
+    <div id="b-b"></div>
+
+
+
+
+
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--<script src="js/scripts.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/elasticlunr/0.9.6/elasticlunr.js"></script>
+    <script>
+        function myFunction() {
+            // Declare variables 
+            var input, filter, table, tr, td, i;
+            input = document.getElementById("myInput");
+            //filter = input.value.toUpperCase();
+            filter = new RegExp(input.value.toUpperCase());
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+
+            // Loop through all table rows, and hide those who don't match the search query
+            for (i = 0; i < tr.length; i++) {
+                //td = tr[i].getElementsByTagName("td")[0];
+                td = tr[i].getElementsByTagName("td")[1];
+                if (td) {
+                    //if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    //console.log(td.innerHTML.toUpperCase())
+                    if (td.innerHTML.toUpperCase().search(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+
+        function newFunction() {
+
+            var index = elasticlunr(function() {
+                this.addField('domain');
+                this.addField('keywords');
+                this.setRef('id');
+                this.saveDocument(false);
+            });
+            //console.log(index);
+
+            var input, filter, table, tr, td, i;
+            //filter = input.value.toUpperCase();
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+
+            // Loop through all table rows, and hide those who don't match the search query
+            for (i = 0; i < tr.length; i++) {
+                //td = tr[i].getElementsByTagName("td")[0];
+                td_dom = tr[i].getElementsByTagName("td")[0];
+                td_kw = tr[i].getElementsByTagName("td")[1];
+                if (td_dom && td_kw) {
+                    console.log(td_dom.getElementsByTagName("a")[0].innerHTML, td_kw.innerHTML)
+                    index.addDoc({
+                        "domain": td_dom.getElementsByTagName("a")[0].innerHTML,
+                        "keywords": td_kw.innerHTML,
+                        "id": i
+                    })
+                }
+
+
+
+                if (i == tr.length - 1) {
+                    console.log(index);
+                    console.log(index.search(filter, {
+                        "fields": {
+                            "keywords": {
+                                "boost": 2,
+                                "bool": "AND"
+                            },
+                            "domain": {
+                                "boost": 1
+                            }
+                        },
+                        "boolean": "AND"
+                    }));
+                }
+
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>

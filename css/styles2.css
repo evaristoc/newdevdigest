@@ -1,0 +1,182 @@
+/**https://bootstrapbay.com/blog/customize-bootstrap/**/
+
+body.news.index {
+    border-top-color: #00a9ae;
+    border-bottom-color: #00a9ae;
+}
+
+body {
+    font-family: "Helevetica Neue", Arial;
+    font-size: 15px;
+    border-top: 8px solid #f4f4f4;
+    position: relative;
+    color: #222222;
+    margin: 0px;
+    line-height: 1.4em;
+    padding-top: 8px;
+    min-height: 100vh;
+    display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.navbar {
+    border: 0px;
+}
+
+nav.easybar {
+    padding: 12px;
+    font-size: 15px;
+    text-transform: uppercase;
+    position: relative;
+    /**float: left;
+    line-height: 1.0em;
+    font-weight: 500;**/
+}
+
+header {
+    text-align: center;
+}
+
+#b-b {
+    background-color: #00a9ae;
+    position: absolute;
+    bottom: 0px;
+    height: 8px;
+    width: 100%;
+}
+
+H1 {
+    color: #00a9ae;
+    line-height: 1.4em;
+    font-size: 2.5em;
+    font-weight: 300;
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+H1,
+H2,
+H3 {
+    margin: 10px 0 10px 0;
+}
+
+column2 {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
+
+.columns {
+    /* -webkit-column-gap: 20px; */
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+}
+
+.recentlinks {
+    padding: 3px;
+    border: 1px solid #ccc;
+    margin: 0px;
+    border-radius: 5px;
+}
+
+
+/*.jbtrchart {
+    max-height: 50px;
+}*/
+
+.chart {
+    width: 100%;
+    max-height: 100px;
+}
+
+
+/*------------------------------------------------------*/
+
+#myInput {
+    background-image: url('/css/searchicon.png');
+    /* Add a search icon to input */
+    background-position: 10px 12px;
+    /* Position the search icon */
+    background-repeat: no-repeat;
+    /* Do not repeat the icon image */
+    width: 100%;
+    /* Full-width */
+    font-size: 16px;
+    /* Increase font-size */
+    padding: 12px 20px 12px 40px;
+    /* Add some padding */
+    border: 1px solid #ddd;
+    /* Add a grey border */
+    margin-bottom: 12px;
+    /* Add some space below the input */
+}
+
+#myUL2 {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#myUL2 li {
+    border: 1px solid #ddd;
+    /* Add a border to all links */
+    margin-top: -1px;
+    /* Prevent double borders */
+    background-color: #f6f6f6;
+    /* Grey background color */
+    padding: 12px;
+    /* Add some padding */
+    text-decoration: none;
+    /* Remove default text underline */
+    font-size: 18px;
+    /* Increase the font-size */
+    color: black;
+    /* Add a black text color */
+    display: block;
+    /* Make it into a block element to fill the whole list */
+}
+
+#myTable {
+    border-collapse: collapse;
+    /* Collapse borders */
+    width: 100%;
+    /* Full-width */
+    border: 1px solid #ddd;
+    /* Add a grey border */
+    font-size: 18px;
+    /* Increase font-size */
+}
+
+#myTable th,
+#myTable td {
+    text-align: left;
+    /* Left-align text */
+    padding: 12px;
+    /* Add padding */
+}
+
+#myTable tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header,
+#myTable tr:hover {
+    /* Add a grey background color to the table header and on hover */
+    background-color: #f1f1f1;
+}
+
+#myTable td.subheader {
+    background-color: #e2e2e2;
+    /* Add a darker background color for headers */
+    cursor: default;
+    /* Change cursor style */
+}

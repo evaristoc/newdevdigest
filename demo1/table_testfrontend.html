@@ -1,0 +1,673 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>FreeCodeCamp Digest</title>
+    <meta name="description" content="FreeCodeCamp Digest">
+    <meta name="Evaristo" content="SitePoint">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.css">
+
+    <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
+
+    <link rel="stylesheet" href="css/styles2.css">
+</head>
+
+<body class="news index">
+
+    <header>
+        <!--            <div class="navbar easybar">
+                <div class="menulinks" style="cursor:pointer" onclick="window.location.href='/'">
+                    <a href="/"></a>
+                </div>
+                <div class="menulink"><a href="*" class="archives">ARCHIVES</a>
+                    <span class="divisor">|</span>
+                    <a href="*" class="search">SEARCH</a></div>
+            </div>
+
+-->
+        <div class="container">
+
+            <nav class="navbar navbar-inverse easybar">
+                <!--http://stackoverflow.com/questions/18529274/change-navbar-color-in-twitter-bootstrap-3-->
+                <div class="container-fluid">
+
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html">FCC Digest</a>
+                    </div>
+
+
+                    <form class="navbar-form navbar-left easybar">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit">
+<i class="glyphicon glyphicon-search"></i>
+</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main class="rankingpage">
+        <div class="container">
+            <div class="jumbotron jbtrchart">
+                <img src='../img/multiBarChart.png' class='chart'>
+                <p>This chart would show trends of the top links. The data injected in chart should CHANGE according to HOW THE VISITOR FILTER the table below!</p>
+                <p></p>
+            </div>
+            <!--<p>This is some text.</p>
+            <p>This is another text.</p>-->
+        </div>
+    </main>
+
+    <section>
+        <div class="container">
+            <p>Below a table with some urls that were mentioned in the <b>HELPFRONTEND CHATROOM</b>, ordered by their prevalence (times mentions along the selected period, the more mentioned and the more recent the mention, the higher in the list)</p>
+            <p>The table includes:</p>
+            <ul>
+                <li>The domain of the url</li>
+                <li>A tentative classification based on content evaluation about that url, when information was found</li>
+                <li>When applicable, a list of relevant keywords that also related to that domain</li>
+            </ul>
+            <br>
+            <p>If interested, more information about the domain following the corresponding button under "What People said".</p>
+            <p>There you will find details about the domain, as well as list of some comments where the url was mentioned, rated accoring to sentiment</p>
+            <h3>Observation: FOR THIS DEMO THE PERSON IS FOLLWING THE www.udemy.com URL</h3>
+            <div class="row">
+                <div class="col-md-offset-8 col-md-4">
+                    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search by class (regex)...">
+                </div>
+            </div>
+            <table id="myTable">
+                <tr class="header">
+                    <th style="width:20%;">DOMAIN</th>
+                    <th style="width:40%; text-align:center;">DESCRIPTION or KEYWORDS</th>
+                    <th style="width:30%;">TENTATIVE CLASSIFICATION</th>
+                    <th style="width:5%; text-align:center;">WHAT PEOPLE SAID</th>
+                </tr>
+                <tr>
+                    <td><a href='#'>getbootstrap.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>css-tricks.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'>tips, tricks, and techniques on using cascading style sheets.</td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>v4-alpha.getbootstrap.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>the most popular html, css, and js framework in the world.</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>fontawesome.io</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>font awesome, the iconic font and css framework</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.sitepoint.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn web design & development with sitepoint tutorials, courses and books - html5, css3, javascript, php, mobile app development, responsive web design</td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.mediawiki.org</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span>site</span>, <span>api</span>, <span>php</span>, <span>page</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>medium.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'>welcome to medium, a place to read, write, and interact with the stories that matter most to you. every day, thousands of voices read, write, and share important stories on medium.</td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.tutorialrepublic.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>interactive tutorials, references and examples on web development technologies.</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>teamtreehouse.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn web design, coding and much more with treehouse. you can learn at your own pace and become job ready within months. start your free trial!</td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.udacity.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>join udacity and learn to code from the best online free courses and nanodegree programs.</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.udemy.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'>udemy is an online learning and teaching marketplace with over 45,000 courses and 15 million students. learn programming, marketing, data science and more.</td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' onclick='myButton()' class='btn btn-success'>MORE</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>scotch.io</a></td>
+                    <td style='font-size:110%;color:#3A4462;'>noinformationfound</td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>learn.shayhowe.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span>css</span>, <span>html</span>, <span>learn</span>, <span>content</span>, <span>first</span>, <span>page</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.tutorialspoint.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'>free tutorials and reference manuals with examples for java concurrency, gerrit, spring aop, spring mvc, apache solr, excel power view, sencha touch, tex commands, agile testing, apache tajo, c++ library, mariadb, sap qm, sap solman,
+                        sap scm, ms access, koajs, oauth2.0, scrapy, sap cca, sap pm, sapui5, cognos, internet of things, rural marketing, trampolining, golf, angular2, framework7, arduino, cherrypy, firebase, sap c4c, sap dashboard, sap pi, expressjs,
+                        design thinking, internet security, pygtk, apache drill, excel charts, elastic search, computer security, extreme programming, behavior driven development, conversion rate optimization, sap basis, business law, kanban, erlang,
+                        sap payroll, asp.net wp, pouchdb, mfc, sap hr, yii, clojure, aurelia, coffeescript, cpanel, laravel, sap webi, ms sql server, pinterest, indian polity, windows10, teradata</td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>learn.jquery.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span>jquery</span>, <span>learn</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>code.tutsplus.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'>thousands of free tutorials and online courses to help you learn software development from mobile devices to web applications and everything in between. join our community to improve your coding skills and workflow. what would you
+                        like to learn?</td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>bootstrapcreative.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>bootstrap css framework tutorials and learning resources to help you quickly start building responsive web sites using bootstrap. learn more</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>tympanus.net</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>codrops is a web design and development blog that publishes articles and tutorials about the latest web trends, techniques and new possibilities.</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.reddit.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>reddit: the front page of the internet</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.9bitstudios.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>web development, wordpress themes, templates, plugins, jquery plugins, and tutorials.</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.sololearn.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>sololearn: learn to code for free!</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.theodinproject.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>the odin project empowers aspiring web developers to learn together</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>bootstrapbay.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>buy & sell premium bootstrap themes & templates in the bootstrapbay marketplace. find a high quality theme for your next web project today! </span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.minimit.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>i write articles and publish plugins with my frontend solutions</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.hongkiat.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>design weblog for designers, bloggers and tech users. covering useful tools, tutorials, tips and inspirational artworks.</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.lingulo.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>lingulo is a web development blog by christoph anastasiades offering resources like simple well-written tutorials, useful tips and great plugins & scripts.</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.mattboldt.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>css, html, javascript, and ruby on rails tutorials, demos, and articles.</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>azmind.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>welcome to azmind! here you\'ll find wordpress themes, bootstrap templates, icons, free psd files, tutorials and many other web design resources.</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.packtpub.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>packt publishing is the leading uk provider of technology ebooks, coding ebooks, videos and blogs; helping it professionals to put software to work.</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>stanhub.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>stanhub is a web design and development blog that publishes articles, tutorials and useful free resources.</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>line25.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>line25 provides ideas and inspiration to web creatives, including roundups of cool website designs and tutorials to help you learn new skills.</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.muicss.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>
+mui is a lightweight css framework that follows google's material design guidelines. mui is designed from the ground up to be fast, small and developer-friendly.
+</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>parall.ax</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>award winning digital agency in leeds & london specialising in web development, seo & digital content marketing.working with national & global brands</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>qnimate.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>qnimate provide tutorials on web development, hybrid mobile app development, wordpress, seo and much more. qnimate is maintained by narayan prusty</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.rtfmanual.io</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>a series of tutorials that use cognitive psychology principles to make css and javascript topics simple!</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.codeschool.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn to code in the comfort of your browser with video tutorials, programming challenges, and screencasts.</td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>amazingcarousel.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span>jquery</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.jqueryscript.net</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>7000+ latest free jquery plugins with examples and tutorials for web & mobile developers.</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>appendto.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>learn the latest front-end languages, frameworks, and libraries with your team. get the latest web development news, tips, and custom solutions today.</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>cssreset.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>all the most common css reset scripts in one place to copy/paste, with complete documentation, guides and tutorials.</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.pluralsight.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>unlimited online developer training, creative and it courses authored by industry experts. learn the most in-demand tech skills from our extensive library.</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>html.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>learn how to code for free with our reference guides. get help with tags, attributes, forms, frames, tables, css and more!</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>tutorialzine.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'>web development tutorials & resources</td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>egghead.io</a></td>
+                    <td style='font-size:110%;color:#3A4462;'> learn javascript for web development with angularjs, react, d3, and other modern tools.
+                    </td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>ajayt365.github.io</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>ajay|learning is beautiful.</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>tutorialrepublic.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>interactive tutorials, references and examples on web development technologies.</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>javascript.info</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>modern javascript tutorial: simple, but detailed explanations with examples and tasks, including: closures, document and events, object oriented programming and more.</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.khanacademy.org</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>you can learn anything. expert-created content and resources for every subject and level. always free.</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>learnswfobject.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>tutorials for using swfobject — a standards-friendly swf embedding system</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>thisdavej.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>thisdavej.com provides tutorials on various topics including node.js, iot, and raspberry pi.</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.airpair.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'>noinformationfound</td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.mkyong.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>resources for java and j2ee developers - provides simple and unique java web development tutorials .</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.webmaster-source.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>useful resources for webmasters. links, tutorials, and other information for bloggers and webmasters.</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>callmenick.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>front end development adventures, experiments, tutorials, & musings</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>css3.bradshawenterprises.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>a practical guide with demos to using css transitions, transforms and animations. examples work in safari, chrome, firefox, opera and ie10</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>addyosmani.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'>addy osmani is a web tooling engineer at google working with the chrome team. he is author of open-source projects like yeoman, todomvc and material design lite. he has also written books like learning javascript design patterns with
+                        o'reilly.
+                    </td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.javascripter.net</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>featuring a great javascript faq collection, online quizzes, demos, games, code examples, and more.</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>thinkster.io</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>the best place on the web for tutorials and screencasts covering angularjs, ionic, swift, mean, and more!</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.sanwebe.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>snook.ca</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>snook.ca - tips, tricks, and bookmarks on web development</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>webdesignerwall.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>a wall of design ideas, web trends, and tutorials.</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>jhtmlcss.blogspot.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>tips and tricks of using javascript, html and css in web design</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.yourhtmlsource.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>html tutorials and well-researched links on all aspects of web design, equally suited to beginners and advanced webmasters.</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.htmlhelp.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>htmlhelp.com is maintained by the web design group to provide web authoring reference material, tips, and answers to frequently asked questions.</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>idiallo.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>a programming blog featuring insights, tutorials, and and clever tips to hack your code and daily life by ibrahim diallo</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>css-snippets.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>css and html snippets to cut and paste into websites. video tutorials on css and other web development topics.</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.javascript-coder.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>javascript tutorials and articles</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>perishablepress.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>wordpress, web design, code & tutorials</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>nodecasts.io</a></td>
+                    <td style='font-size:110%;color:#3A4462;'>get started learning today with our free node.js tutorials. we cover a wide range of topics including node.js, javascript and web performance.</td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>4dev.tech</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>java ee, javascript, angular, node.js, php and much more</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.html5canvastutorials.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>html5 canvas tutorial, tutorials, examples, demos, code, and articles</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.webucator.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>webucator provides onsite and live online training on technologies such as microsoft sharepoint, sql server and office, java, adobe dreamweaver and photoshop, html5, javascript, python and php, and much more.</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.codexworld.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>learn web development, php, mysql, javascript, jquery, ajax, wordpress, drupal, codeigniter, cakephp with codexworld tutorials. view live demo and download source code.</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.codeproject.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'>free source code and tutorials for software developers and architects.; updated: 11 jun 2017</td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>lifeinthegrid.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>tools, tips and tech for entrepreneurs</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>ninodezign.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>ninodezign is a blog dedicated for sharing knowledge, top quality open source resources for web developer and web designer daily . it consists of topics that are of wide range including inspiration designs, tutorials, seo, tools and resources.</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>demos.codexworld.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>tutorials live demo - programming, web development, php, mysql, jquery, ajax tutorials live demo. view live demo and download script.</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.utexas.edu</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>like the state it calls home, the university of texas at austin is a bold, ambitious leader, home to more than 51,000 students and 3,000 teaching faculty.</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>app.pluralsight.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.the-art-of-web.com</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>a growing collection of tutorials, scripts and solutions relating to web development, particularly in the areas of php, javascript and sql.</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.edx.org</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span style='font-size:60%;'>edx offers free online courses and classes. find the latest mooc from the world’s best universities including mit, harvard, berkeley, ut and others. topics include business, computer science, finance, history, literature, math, science, statistics and more.</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+                <tr>
+                    <td><a href='#'>www.webweaver.nu</a></td>
+                    <td style='font-size:110%;color:#3A4462;'><span>html</span>, <span>page</span></td>
+                    <td style='font-size:110%;color:#3A4462;'>learn|tutorial|course|training| tips|example</td>
+                    <td style='font-size:75%;'><button type='button' class='btn btn-primary'>more</button></td>
+                </tr>
+
+
+
+
+            </table>
+
+        </div>
+
+
+    </section>
+
+    <footer></footer>
+
+    <div id="b-b"></div>
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--<script src="js/scripts.js"></script>-->
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
+
+    <!-- Latest compiled and minified Locales -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/locale/bootstrap-table-zh-CN.min.js"></script>
+    <script>
+        function myFunction() {
+            // Declare variables 
+            var input, filter, table, tr, td, i;
+            input = document.getElementById("myInput");
+            //filter = input.value.toUpperCase();
+            filter = new RegExp(input.value.toUpperCase());
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+
+            // Loop through all table rows, and hide those who don't match the search query
+            for (i = 0; i < tr.length; i++) {
+                //td = tr[i].getElementsByTagName("td")[0];
+                td = tr[i].getElementsByTagName("td")[2];
+                if (td) {
+                    //if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    //console.log(td.innerHTML.toUpperCase())
+                    if (td.innerHTML.toUpperCase().search(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+
+        //function myButton() {
+        //    console.log('hello button')
+        //    document.getElementById("myButton").onclick = function() {
+        //        location.href = "./reference.html";
+        //    };
+        // }
+
+        function myButton() {
+            window.location.href = './reference.html';
+            return false; // cancel default behavior
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JavaScript Weekly Issue 262: December 11, 2015</title>
+    <meta name="description" content="Microsoft's Chakra JavaScript Engine to Be Open-Sourced, Bliss: A 3KB Library for Happier Vanilla JS, JavaScript Developer Survey Results, Try RASON® – RESTful Analytic Solver® Object Notation for JavaScript, The Beginner's Preemptive Guide To AngularJS 2 Alpha, and more.">
+    <link rel="stylesheet" href="/assets/app-a1964a09e0cc118360ff8ef58b48f025.css">
+    <link rel="alternate" type="application/rss+xml" title="JavaScript Weekly" href="/rss/1h21e2f7" />
+    <link rel="stylesheet" href="/stylesheets/jw.css">
+
+    <meta name="csrf-token" content="dpugGY5XBmn49B2hc9heiobag4PjL64WmH0PhNzh8WE=">
+
+    <script src="/jquery.min.js"></script>
+</head>
+
+<body class="jw dom dom-jw issues 262 jw issue">
+    <div class="containerweb">
+        <header>
+            <nav class="pub_nav">
+                <div class="sitename" style="cursor: pointer" onclick="window.location.href='/'"><a href="/">JavaScript Weekly</a></div>
+
+                <div class="items">
+
+                    <a href="/issues" class="issues">Archives</a><span class="divider">|</span>
+                    <a href="/search" class="search">Search</a><span class="divider">|</span>
+                    <a href="/latest" class="latest">Latest Issue</a><span class="divider">|</span>
+                    <a href="/rss/1cj826i8">RSS</a>
+                    </ul>
+                </div>
+            </nav>
+
+
+
+        </header>
+        <main>
+
+            <!-- %= pub_partial :subscribe_box % -->
+
+            <div class="floatingsearch">
+                <form class="search" method="get" action="/search">
+                    <input type="text" class="q" name="q" value="" placeholder="Search" size="20" />
+                    <input type="hidden" name="pub" value="jw" />
+                    <button class="submit awesome">Search</button>
+                </form>
+            </div>
+
+            <h1><a href="/issues" style="text-decoration: underline">Issues</a> &raquo; 262</h1>
+
+            <div class="nomobile">
+                <div class="subscribe_box" class="">
+                    <form class="subscribe" action="/subscribe" method="POST">
+                        <input type="email" placeholder="Want to subscribe? Enter your address here" class="email" name="email" id="email" /><button class="awesome" type="submit">Subscribe now &raquo;</button>
+                        <div class="smallprint"><strong>ONE</strong> e-mail each Friday. Easy to unsubscribe. No spam &mdash; your e-mail address is <a href="https://cooperpress.com/spam.html">safe.</a></div>
+                        <input type="hidden" name="_csrf" value="dpugGY5XBmn49B2hc9heiobag4PjL64WmH0PhNzh8WE=" />
+                    </form>
+                </div>
+            </div>
+            <div class="issue-html">
+                <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="font-family: 'helvetica neue', helvetica, arial, sans-serif; font-size: 14px; line-height: 20px; color: #333">
+                    <tr>
+                        <td align="center" valign="top">
+                            <table border="0" width="670" cellpadding="0" cellspacing="0" class="container noarchive" style="border-collapse: collapse;">
+                                <tr>
+                                    <td style="padding-top: 6px; padding-bottom: 6px; font-size: 11px; text-align: center; color: #555; font-family: verdana, arial, sans-serif">
+                                        <span class="nomo">This week's JavaScript news</span><br><a target="_blank" href="http://javascriptweekly.com/issues/262" style="color: #00aaac">Read this e-mail on the Web</a>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" width="670" cellpadding="0" cellspacing="0" class="container" style="border-collapse: collapse">
+                                <tr>
+                                    <td style="background-color: #00aaac">
+                                        <table width="100%" cellspacing="0" cellpadding="0" align="left">
+                                            <tr>
+                                                <td align="left" class="block" style="padding: 6px 12px;">
+                                                    <table align="left" width="50%" class="gowide">
+                                                        <tr>
+                                                            <td><span style="line-height: 36px; font-size: 23px; color: #00aaac; font-weight: bold; color: #ffffff; -webkit-font-smoothing: antialiased;">JavaScript Weekly</span></td>
+                                                        </tr>
+                                                    </table>
+                                                    <table align="left" style="text-align: right" width="50%" class="gowide lonmo">
+                                                        <tr>
+                                                            <td><span style="font-size: 14px; line-height: 36px; font-weight: normal; color: #ffffff">
+Issue 262 — December 11, 2015
+</span></td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 16px 12px 12px 12px" align="left">
+                                        <p style="margin-top: 0; font-size: 1.0em; line-height: 1.4em; padding-top: 0; margin-bottom: 20px">For today <strong>only</strong>, we've partnered with Manning Publications on a 50% sale of <a target="_blank" href="https://www.manning.com/books/secrets-of-the-javascript-ninja-second-edition">Secrets of the JavaScript Ninja</a>,
+                                            <a target="_blank" href="https://www.manning.com/books/javascript-application-design">JavaScript Application Design</a> &amp; <a target="_blank" href="https://www.manning.com/books/third-party-javascript">Third Party JavaScript</a>.
+                                            Use code <code>dotd121115cc</code> to get the 50%. Not interested? Enjoy <a target="_blank" href="http://cooperpress.s3.amazonaws.com/Excerpt_Resig2.pdf">this free chapter [PDF]</a> from <em>Secrets of the JavaScript Ninja</em>                                            instead :-)<br><em>- Peter Cooper, Editor</em></p>
+                                        <table width="490" align="left" class="gowide" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin-bottom: 20px">
+                                            <tr>
+                                                <td>
+                                                    <div style="font-size: 18px; margin: 2px 0px"><a target="_blank" href="https://blogs.windows.com/msedgedev/2015/12/05/open-source-chakra-core/?utm_source=javascriptweekly&amp;utm_medium=email" title="blogs.windows.com/msedgedev/2015/12/05/open-source-chakra-core/"
+                                                            style="display: block; color: #0055bb; line-height: 24px; text-decoration: underline; font-weight: normal">Microsoft's Chakra JavaScript Engine to Be Open-Sourced</a></div>
+                                                    <div style="font-size: 14px; line-height: 19px; margin-top: 0px; margin-bottom: 3px">
+                                                        Microsoft will open-source the core components of Chakra (as <em>ChakraCore</em>), the JavaScript engine powering Microsoft Edge.
+                                                    </div>
+                                                    <div style="color: #009900; font-weight: normal; font-size: 12px; line-height: 14px; text-transform: uppercase; margin-top: 5px; font-family: verdana, arial, sans-serif">
+                                                        MSDN
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table width="140" class="nomo" align="left">
+                                            <tr>
+                                                <td style="text-align: center"></td>
+                                            </tr>
+                                        </table>
+                                        <br clear="all" style="clear: both">
+                                        <table width="490" align="left" class="gowide" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin-bottom: 20px">
+                                            <tr>
+                                                <td>
+                                                    <div style="font-size: 18px; margin: 2px 0px"><a target="_blank" href="http://lea.verou.me/2015/12/introducing-bliss-a-3kb-library-for-happier-vanilla-js/?utm_source=javascriptweekly&amp;utm_medium=email" title="lea.verou.me/2015/12/introducing-bliss-a-3kb-library-for-happier-vanilla-js/"
+                                                            style="display: block; color: #0055bb; line-height: 24px; text-decoration: underline; font-weight: normal">Bliss: A 3KB Library for Happier Vanilla JS</a></div>
+                                                    <div style="font-size: 14px; line-height: 19px; margin-top: 0px; margin-bottom: 3px">
+                                                        Spawned from 8 years of solid JavaScript work and expertise comes Lea Verou’s <a target="_blank" href="http://blissfuljs.com/">Bliss</a>, a ‘helper library for people who don’t like helper libraries’
+                                                        and who want to use vanilla JS with just a <em>little</em> help. The <a target="_blank" href="http://blissfuljs.com/">side by side examples</a> of vanilla JS and Bliss are compelling.
+                                                    </div>
+                                                    <div style="color: #009900; font-weight: normal; font-size: 12px; line-height: 14px; text-transform: uppercase; margin-top: 5px; font-family: verdana, arial, sans-serif">
+                                                        Lea Verou
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table width="140" class="nomo" align="left">
+                                            <tr>
+                                                <td style="text-align: center"></td>
+                                            </tr>
+                                        </table>
+                                        <br clear="all" style="clear: both">
+                                        <table width="490" align="left" class="gowide" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin-bottom: 20px">
+                                            <tr>
+                                                <td>
+                                                    <div style="font-size: 18px; margin: 2px 0px"><a target="_blank" href="https://ponyfoo.com/articles/javascript-developer-survey-results?utm_source=javascriptweekly&amp;utm_medium=email" title="ponyfoo.com/articles/javascript-developer-survey-results"
+                                                            style="display: block; color: #0055bb; line-height: 24px; text-decoration: underline; font-weight: normal">JavaScript Developer Survey Results</a></div>
+                                                    <div style="font-size: 14px; line-height: 19px; margin-top: 0px; margin-bottom: 3px">
+                                                        Nicolas Bevacqua ran a survey on his popular JavaScript blog and got over 5000 responses. Get insights into the community’s use of testing, semicolons, CI, build scripts, and more.
+                                                    </div>
+                                                    <div style="color: #009900; font-weight: normal; font-size: 12px; line-height: 14px; text-transform: uppercase; margin-top: 5px; font-family: verdana, arial, sans-serif">
+                                                        Nicolas Bevacqua
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table width="140" class="nomo" align="left">
+                                            <tr>
+                                                <td style="text-align: center"></td>
+                                            </tr>
+                                        </table>
+                                        <br clear="all" style="clear: both">
+                                        <table width="490" align="left" class="gowide" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin-bottom: 20px">
+                                            <tr>
+                                                <td>
+                                                    <div style="font-size: 18px; margin: 2px 0px"><a target="_blank" href="https://rason.com/?utm_source=javascriptweekly&amp;utm_medium=email" title="rason.com/" style="display: block; color: #0055bb; line-height: 24px; text-decoration: underline; font-weight: normal">Try RASON® – RESTful Analytic Solver® Object Notation for JavaScript</a></div>
+                                                    <div style="font-size: 14px; line-height: 19px; margin-top: 0px; margin-bottom: 3px">
+                                                        <a target="_blank" href="https://rason.com/">RASON®</a> is the super-easy way to solve powerful optimization and simulation models in your web or mobile app. Use a high-level modeling language embedded
+                                                        in JSON, and a simple, Azure-backed REST API that’s free for small problems, but scalable to handle huge models.</div>
+                                                    <div style="color: #009900; font-weight: normal; font-size: 12px; line-height: 14px; text-transform: uppercase; margin-top: 5px; font-family: verdana, arial, sans-serif">
+                                                        Frontline Systems Inc.
+                                                        <span style="background-color: #ffff99; color: #777700; font-weight: normal; padding: 1px 5px 0px 5px;">Sponsored</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table width="140" class="nomo" align="left">
+                                            <tr>
+                                                <td style="text-align: center">
+                                                    <a target="_blank" href="https://rason.com/?utm_source=javascriptweekly&amp;utm_medium=email"><img src="https://copm.s3.amazonaws.com/8aab341e.png" style="border: 0px solid #bbbbbb" width="110" height="110" alt="Frontline Systems Inc."></a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <br clear="all" style="clear: both">
+                                        <table width="490" align="left" class="gowide" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin-bottom: 20px">
+                                            <tr>
+                                                <td>
+                                                    <div style="font-size: 18px; margin: 2px 0px"><a target="_blank" href="http://antjanus.com/blog/tutorials/the-beginners-preemptive-guide-to-angularjs-2-alpha/?utm_source=javascriptweekly&amp;utm_medium=email" title="antjanus.com/blog/tutorials/the-beginners-preemptive-guide-to-angularjs-2-alpha/"
+                                                            style="display: block; color: #0055bb; line-height: 24px; text-decoration: underline; font-weight: normal">The Beginner's Preemptive Guide To AngularJS 2 Alpha</a></div>
+                                                    <div style="font-size: 14px; line-height: 19px; margin-top: 0px; margin-bottom: 3px">
+                                                        An extensive walkthrough of building a Markdown editor in Angular 2 that got the thumbs up from Angular’s own Brad Green.
+                                                    </div>
+                                                    <div style="color: #009900; font-weight: normal; font-size: 12px; line-height: 14px; text-transform: uppercase; margin-top: 5px; font-family: verdana, arial, sans-serif">
+                                                        AntJanus
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table width="140" class="nomo" align="left">
+                                            <tr>
+                                                <td style="text-align: center"></td>
+                                            </tr>
+                                        </table>
+                                        <br clear="all" style="clear: both">
+                                        <table width="490" align="left" class="gowide" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin-bottom: 20px">
+                                            <tr>
+                                                <td>
+                                                    <div style="font-size: 18px; margin: 2px 0px"><a target="_blank" href="https://24ways.org/2015/universal-react/?utm_source=javascriptweekly&amp;utm_medium=email" title="24ways.org/2015/universal-react/" style="display: block; color: #0055bb; line-height: 24px; text-decoration: underline; font-weight: normal">Universal React: A Tutorial</a></div>
+                                                    <div style="font-size: 14px; line-height: 19px; margin-top: 0px; margin-bottom: 3px">
+                                                        “We’re going to create a tiny ReactJS application that will work both on the server and the client.”
+                                                    </div>
+                                                    <div style="color: #009900; font-weight: normal; font-size: 12px; line-height: 14px; text-transform: uppercase; margin-top: 5px; font-family: verdana, arial, sans-serif">
+                                                        Jack Franklin
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table width="140" class="nomo" align="left">
+                                            <tr>
+                                                <td style="text-align: center"></td>
+                                            </tr>
+                                        </table>
+                                        <br clear="all" style="clear: both">
+                                        <table width="490" align="left" class="gowide" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin-bottom: 20px">
+                                            <tr>
+                                                <td>
+                                                    <div style="font-size: 18px; margin: 2px 0px"><a target="_blank" href="http://www.sitepoint.com/how-to-schedule-background-tasks-in-javascript/?utm_source=javascriptweekly&amp;utm_medium=email" title="www.sitepoint.com/how-to-schedule-background-tasks-in-javascript/"
+                                                            style="display: block; color: #0055bb; line-height: 24px; text-decoration: underline; font-weight: normal">How to Schedule Background Tasks in JavaScript</a></div>
+                                                    <div style="font-size: 14px; line-height: 19px; margin-top: 0px; margin-bottom: 3px">
+                                                        We all know about setTimeout for timing the execution of code, but are you familiar with requestIdleCallback?
+                                                    </div>
+                                                    <div style="color: #009900; font-weight: normal; font-size: 12px; line-height: 14px; text-transform: uppercase; margin-top: 5px; font-family: verdana, arial, sans-serif">
+                                                        Craig Buckler
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table width="140" class="nomo" align="left">
+                                            <tr>
+                                                <td style="text-align: center"></td>
+                                            </tr>
+                                        </table>
+                                        <br clear="all" style="clear: both">
+                                        <p style="color: #00aaac; font-size: 20px; font-weight: normal; margin-top: 8px; margin-bottom: 10px">Jobs</p>
+                                        <ul style="padding-left: 18px; margin-top: 10px; list-style-type: square">
+                                            <li style="color: #00aaac; margin-bottom: 12px; font-size: 15px; line-height: 17px">
+                                                <a target="_blank" href="https://apply.hrmdirect.com/resumedirect/ApplyOnline/Apply.aspx?req_id=enc-16.9121200495419121&amp;source=291565-CS-11763" style="color: #0055bb; margin-right: 4px; line-height: 18px; font-weight: normal">Front-End Developer at Viewpost (Orlando, FL)</a>
+                                                <span style="font-size: 12px; color: #666666">Viewpost has built a B2B platform that connects businesses to their partners via their A/P and A/R- think of PayPal marrying LinkedIn. If you are passionate about JavaScript, React, HTML5, Angular, etc. in order to
+                                        build responsive applications then we would love to hear from you.</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif">Viewpost</span>
+                                            </li>
+                                            <li style="color: #00aaac; margin-bottom: 12px; font-size: 15px; line-height: 17px">
+                                                <a target="_blank" href="http://go.pluralsight.com/C0003352?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 18px; font-weight: normal">Expert JavaScript Instructors at Pluralsight (Freelance-Part-time)</a>
+                                                <span style="font-size: 12px; color: #666666">Currently hiring expert JavaScript Developers that want to share their knowledge with a global audience. As a Pluralsight author, you'll join a tight knit family of passionate teachers and earn royalties. We are looking
+                                        for the best communicators and presenters in the developer community. Apply today.</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif">Pluralsight</span>
+                                            </li>
+                                            <li style="color: #00aaac; margin-bottom: 12px; font-size: 15px; line-height: 17px">
+                                                <a target="_blank" href="https://hired.com/?utm_source=newsletters&amp;utm_medium=javascriptweekly&amp;utm_campaign=q4_15-petercooperpress&amp;utm_term=job&amp;utm_content=121115-hateapplying" style="color: #0055bb; margin-right: 4px; line-height: 18px; font-weight: normal">Looking for job offers from top companies but hate applying?</a>
+                                                <span style="font-size: 12px; color: #666666">You're in luck! Through Hired, companies reach out to candidates with your skills and experience and request interviews. Stop applying and let the offers come to you with Hired.</span>                                                <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif">Hired<span>.</span>com</span>
+                                            </li>
+                                        </ul>
+                                        <p style="color: #00aaac; font-size: 20px; font-weight: normal; margin-top: 24px; margin-bottom: 10px">In brief</p>
+                                        <ul style="padding-left: 18px; margin-top: 10px; list-style-type: square">
+                                            <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                                                <a target="_blank" href="http://blogs.msdn.com/b/typescript/archive/2015/11/30/announcing-typescript-1-7.aspx?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">TypeScript 1.7 Released</a>                                                <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #00aadd; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">news</span> <br><span style="font-size: 12px; color: #666666">
+Now supports Async functions for targets with ES6 generator support enabled.
+</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br></span>
+                                            </li>
+                                            <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                                                <a target="_blank" href="https://github.com/Microsoft/vscode/pull/337?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">MS Visual Studio Code Enables ES6 Support by Default</a>                                                <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #00aadd; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">news</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Microsoft </span>
+                                            </li>
+                                            <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                                                <a target="_blank" href="http://myemail.constantcontact.com/Dec-11--JavaScript-Day-.html?soid=1101335703814&amp;aid=66wzDu6VPYo" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">50% off 5 of Manning's JavaScript Books - Today Only</a>                                                <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #00aadd; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">news</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Manning Publications   <span style="background-color: #ffff99; color: #777700; font-weight: normal; padding: 1px 5px 0px 5px;">Sponsored</span></span>
+                                            </li>
+                                            <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                                                <a target="_blank" href="http://nodejs.org/en/blog/release/v5.2.0/?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">Node v5.2.0 (Stable) Released</a>                                                <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #00aadd; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">news</span> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #6ca629; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">node</span>                                                <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Node Foundation </span>
+                                            </li>
+                                            <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                                                <a target="_blank" href="https://github.com/angular/angular.js/blob/master/CHANGELOG.md#150-rc0-oblong-panoptikum-2015-12-09?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">Angular 1.5.0-rc.0 Released</a>                                                <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #00aadd; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">news</span> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #00bbbb; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">code</span>                                                <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>GitHub </span>
+                                            </li>
+                                            <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                                                <a target="_blank" href="https://github.com/mindeavor/es-pipeline-operator?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">ES7 Proposal: The Pipeline Operator</a>                                                <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #00aadd; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">news</span> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #AF7817; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">opinion</span>                                                <br><span style="font-size: 12px; color: #666666">
+A proposal for adding the simple-but-useful pipeline operator to JavaScript.
+</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Gilbert </span>
+                                            </li>
+                                            <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                                                <a target="_blank" href="https://www.codeschool.com/courses/es2015-the-shape-of-javascript-to-come?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">CodeSchool Launches Interactive ES2015 Course</a>                                                <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #00aadd; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">news</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>CodeSchool </span>
+                                            </li>
+                                            <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                                                <a target="_blank" href="http://www.raymondcamden.com/2015/12/08/parsing-rss-feeds-in-javascript-options?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">Parsing RSS Feeds in JavaScript - The Options</a>                                                <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #99dd00; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">tutorial</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Raymond Camden </span>
+                                            </li>
+                                            <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                                                <a target="_blank" href="http://angularjs.blogspot.com/2015/12/building-mobile-apps-with-angular-2-and.html?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">Building Mobile Apps with Angular 2 and NativeScript</a>                                                <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #99dd00; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">tutorial</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Angular Blog </span>
+                                            </li>
+                                            <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                                                <a target="_blank" href="http://www.sitepoint.com/whats-new-in-vue-js-1-0/?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">What's New in Vue.js 1.0</a>                                                <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #99dd00; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">tutorial</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Ryan Chenkie </span>
+                                            </li>
+                                            <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                                                <a target="_blank" href="http://blog.scottlogic.com/2015/12/07/angular-2.html?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">Building A ToDo List Application with Angular 2</a>                                                <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #99dd00; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">tutorial</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Colin Eberhardt </span>
+                                            </li>
+                                            <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                                                <a target="_blank" href="https://kripken.github.io/talks/wasm.html#/?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">Emscripten and WebAssembly</a>                                                <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #cc00cc; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">slidedeck</span> <br>
+                                                <span style="font-size: 12px; color: #666666">
+                                                    A slidedeck from the creator of Emscripten.
+                                                    </span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Alon Zakai </span>
+                                            </li>
+                                            <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                                                <a target="_blank" href="https://blog.formidable.com/using-react-is-a-business-decision-not-a-technology-choice-63c4641c5f7?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">Using React is a Business Decision, Not a Technology Choice</a>                                                <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #AF7817; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">opinion</span> <br><span style="font-size: 12px; color: #666666">
+“React grew out of solving business problems rather than technical ones.”
+</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Eric Baer </span>
+                                            </li>
+                                            <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                                                <a target="_blank" href="https://medium.com/@isntitvacant/observations-on-promises-2b08a0d0c27?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">Observations on Promises</a>                                                <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #AF7817; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">opinion</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Chris Dickinson </span>
+                                            </li>
+                                            <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                                                <a target="_blank" href="http://csnw.github.io/d3.compose/?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">d3.compose: Make Data-Driven Visualizations from Reusable Components in d3</a>                                                <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #00bbbb; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">code</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Cornerstone Systems Northwest Inc. </span>
+                                            </li>
+                                            <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                                                <a target="_blank" href="http://riteshkr.com/embed.js/?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">embed.js: A Pure JavaScript Plugin to Embed (Many Things)</a>                                                <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #00bbbb; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">code</span> <br><span style="font-size: 12px; color: #666666">
+Analyzes supplied strings to insert/embed code, gists, videos, MP3s, and more into a page.
+</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Ritesh Kumar </span>
+                                            </li>
+                                            <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                                                <a target="_blank" href="https://github.com/n-fuse/pajax?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">pajax: Promise-Based AJAX library</a>                                                <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #00bbbb; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">code</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>n-fuse GmbH </span>
+                                            </li>
+                                            <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                                                <a target="_blank" href="http://gridster.net/?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">gridster.js: jQuery Plugin for Drag and Drop Multi-Column Grids</a>                                                <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #00bbbb; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">code</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Ducksboard </span>
+                                            </li>
+                                            <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                                                <a target="_blank" href="http://robert.kra.hn/projects/paredit-js?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">paredit.js: S-Expression Editor and Navigation</a>                                                <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #00bbbb; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">code</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Robert Krahn </span>
+                                            </li>
+                                            <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                                                <a target="_blank" href="http://sachinchoolur.github.io/angular-trix/?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">Angular-trix: A Rich WYSIWYG Text Editor Directive for Angular</a>                                                <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #00bbbb; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">code</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Sachin N </span>
+                                            </li>
+                                            <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                                                <a target="_blank" href="http://www.red-gate.com/products/dotnet-development/ants-performance-profiler/entrypage/52-net-performance-tips?utm_source=javascriptweekly&amp;utm_medium=displayemail&amp;utm_content=52_net_tips&amp;utm_campaign=antsperformanceprofiler&amp;utm_term=email-24161"
+                                                    style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">Discover 52 tips to improve your .NET performance</a> <br><span style="font-size: 12px; color: #666666">Our new eBook features dozens of tips and tricks to boost your .NET performance. <a target="_blank" href="http://www.red-gate.com/products/dotnet-development/ants-performance-profiler/entrypage/52-net-performance-tips?utm_source=javascriptweekly&amp;utm_medium=displayemail&amp;utm_content=52_net_tips&amp;utm_campaign=antsperformanceprofiler&amp;utm_term=email-24161">Download your free copy.</a></span>                                                <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Redgate   <span style="background-color: #ffff99; color: #777700; font-weight: normal; padding: 1px 5px 0px 5px;">Sponsored</span></span>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td bgcolor="#f4f4f4" style="font-family: verdana, helvetica, arial, sans-serif; text-align: left; padding-top: 12px; padding-left: 12px; padding-right: 12px; padding-bottom: 12px" class="noarchive">
+                                        <p style="line-height: 15px; font-size: 11px; margin-top: 0">Curated by <a target="_blank" href="http://twitter.com/peterc" style="color: #00aaac">Peter Cooper</a> and published by <a target="_blank" href="https://cooperpress.com/" style="color: #00aaac">Cooper Press</a>.</p>
+                                        <p style="font-size: 13px"><a target="_blank" href="*%7CUNSUB%7C*" style="color: #00aaac">Stop getting JavaScript Weekly</a> : <a target="_blank" href="*%7CUPDATE_PROFILE%7C*" style="color: #00aaac">Change email address</a> : <a target="_blank"
+                                                href="http://javascriptweekly.com/issues/262" style="color: #00aaac">Read this issue on the Web</a></p>
+                                        <p style="font-size: 11px; line-height: 15px">© Cooper Press Ltd. Office 30, Lincoln Way, Louth, LN11 0LS, UK</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- 
+	0,"Microsoft's Chakra JavaScript Engine to Be Open-Sourced",,0.0
+	1,"Bliss: A 3KB Library for Happier Vanilla JS",,0.0
+	2,"JavaScript Developer Survey Results",,0.0
+	3,"Try RASON® – RESTful Analytic Solver® Object Notation for JavaScript",,0.0
+	4,"The Beginner's Preemptive Guide To AngularJS 2 Alpha",,0.0
+	5,"Universal React: A Tutorial",,0.0
+	6,"How to Schedule Background Tasks in JavaScript",,0.0
+	7,"Front-End Developer at Viewpost (Orlando, FL)",,0.0
+	8,"Expert JavaScript Instructors at Pluralsight (Freelance-Part-time)",,0.0
+	9,"Looking for job offers from top companies but hate applying?",,0.0
+	10,"TypeScript 1.7 Released",,0.0
+	11,"MS Visual Studio Code Enables ES6 Support by Default",,0.0
+	12,"50% off 5 of Manning's JavaScript Books - Today Only",,0.0
+	13,"Node v5.2.0 (Stable) Released",,0.0
+	14,"Angular 1.5.0-rc.0 Released",,0.0
+	15,"ES7 Proposal: The Pipeline Operator",,0.0
+	16,"CodeSchool Launches Interactive ES2015 Course",,0.0
+	17,"Parsing RSS Feeds in JavaScript - The Options",,0.0
+	18,"Building Mobile Apps with Angular 2 and NativeScript",,0.0
+	19,"What's New in Vue.js 1.0",,0.0
+	20,"Building A ToDo List Application with Angular 2",,0.0
+	21,"Emscripten and WebAssembly",,0.0
+	22,"Using React is a Business Decision, Not a Technology Choice",,0.0
+	23,"Observations on Promises",,0.0
+	24,"d3.compose: Make Data-Driven Visualizations from Reusable Components in d3",,0.0
+	25,"embed.js: A Pure JavaScript Plugin to Embed (Many Things)",,0.0
+	26,"pajax: Promise-Based AJAX library",,0.0
+	27,"gridster.js: jQuery Plugin for Drag and Drop Multi-Column Grids",,0.0
+	28,"paredit.js: S-Expression Editor and Navigation",,0.0
+	29,"Angular-trix: A Rich WYSIWYG Text Editor Directive for Angular",,0.0
+	30,"Discover 52 tips to improve your .NET performance",,0.0-->
+
+            <div class="subscribe_box" class="">
+                <form class="subscribe" action="/subscribe" method="POST">
+                    <input type="email" placeholder="Want to subscribe? Enter your address here" class="email" name="email" id="email" /><button class="awesome" type="submit">Subscribe now &raquo;</button>
+                    <div class="smallprint"><strong>ONE</strong> e-mail each Friday. Easy to unsubscribe. No spam &mdash; your e-mail address is <a href="https://cooperpress.com/spam.html">safe.</a></div>
+                    <input type="hidden" name="_csrf" value="dpugGY5XBmn49B2hc9heiobag4PjL64WmH0PhNzh8WE=" />
+                </form>
+            </div>
+
+            <div class="strap"><strong>ONE</strong> e-mail each Friday. Easy to unsubscribe. No spam &mdash; your e-mail address is <a href="https://cooperpress.com/spam.html">safe</a><br />Published by <a href="https://cooperpress.com/">Cooper Press</a> and curated by
+                <a href="http://twitter.com/peterc">Peter Cooper</a></div>
+        </main>
+        <footer>
+        </footer>
+    </div>
+
+    <div id="border-b"></div>
+    <noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1213763378662807&ev=PageView&noscript=1"
+/></noscript>
+    <!-- DO NOT MODIFY -->
+    <!-- End Facebook Pixel Code -->
+</body>
+
+</html>

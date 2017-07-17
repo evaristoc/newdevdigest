@@ -1,0 +1,34 @@
+body.news.index {
+    border-top-color: #00a9ae;
+}
+
+body {
+    font-family: "Helevetica Neue", Arial;
+    font-size: 15px;
+    border-top: 8px solid #f4f4f4;
+    position: relative;
+    color: #222222;
+    margin: 0px;
+    line-height: 1.4em;
+    padding-top: 8px;
+    min-height: 100vh;
+    display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div.easybar {
+    padding: 12px;
+    font-size: 15px;
+    text-transform: uppercase;
+    position: relative;
+    /**float: left;
+    line-height: 1.0em;
+    font-weight: 500;**/
+}
+
+header {
+    text-align: center;
+}
